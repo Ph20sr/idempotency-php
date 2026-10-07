@@ -1,0 +1,21 @@
+{
+    "name": "ph20sr/idempotency-php",
+    "description": "Chaves de idempotência (Idempotency-Key) para APIs PHP, no padrão da Stripe: o mesmo pedido reenviado devolve a mesma resposta em vez de criar cobrança, pedido ou cadastro duplicado.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["idempotency", "idempotency-key", "api", "payments", "retry", "php", "pdo"],
+    "require": {
+        "php": ">=8.1",
+        "ext-pdo": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": { "Ph20sr\\Idempotency\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Ph20sr\\Idempotency\\Tests\\": "tests/" }
+    }
+}
